@@ -211,7 +211,7 @@ sup {
 }
 
 .no-webp .header-section {
-  background: url("images/header_bg.jpg") 50%/cover; }
+  background: url("../images/header_bg.jpg") 50%/cover; }
 
 .header-section {
   width: 100%;
@@ -388,7 +388,7 @@ h3 {
 @media (min-width: 600.98px) {
   .header__logo-block {
     padding-left: 68px;
-    background: url(./images/icon/logo.svg) 1% 73% no-repeat;
+    background: url(../images/icon/logo.svg) 1% 73% no-repeat;
   }
 
   .header__logo-block span {
@@ -448,4 +448,4 @@ h3 {
   }
 }
 
-.webp .header-section { background: url(./images/header_bg.webp) 50%/cover; }
+.webp .header-section { background: url(../images/header_bg.webp) 50%/cover; }
