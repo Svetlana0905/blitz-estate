@@ -211,7 +211,7 @@ sup {
 }
 
 .no-webp .header-section {
-  background: url("./images/header_bg.jpg") 50%/cover; }
+  background: url("images/header_bg.jpg") 50%/cover; }
 
 .header-section {
   width: 100%;
