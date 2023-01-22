@@ -8,7 +8,12 @@
       flex-direction: column;
       margin: 0 auto;
       padding-bottom: 72px;
+      padding-top: 30px;
       max-width: $maxWidth;
+
+      @include media(600) {
+         padding-top: 0px;
+      }
    }
 
    & h2 {
@@ -37,10 +42,24 @@
 
 .about {
    &__item {
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
+
+      & .big-text {
+         display: none;
+      }
+
+      @include media(407) {
+         display: flex;
+      }
+
+      @include media(600) {
+         & .big-text {
+            display: block;
+         }
+      }
 
       @include media(768) {
          flex-direction: row;
