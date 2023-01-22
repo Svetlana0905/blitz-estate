@@ -1,0 +1,19 @@
+.order-call-button {
+   background: transparent;
+   border: 1px solid $blue;
+   padding: 15px 0 18px;
+   max-width: 272px;
+   border-radius: $mainRadius;
+   font-size: 16px;
+   font-weight: 600;
+
+}
+
+.primary-button {
+   height: 68px;
+   max-width: 360px;
+   font-size: 20px;
+   color: $white;
+   background: $blue;
+   border-radius: $mainRadius;
+}

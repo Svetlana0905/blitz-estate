@@ -1,0 +1,36 @@
+.header {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   max-width: $maxWidth;
+
+   &__logo-block {
+
+      display: flex;
+      align-items: center;
+      padding-top: 14px;
+      padding-left: 68px;
+      background: url(../../images/icon/logo.svg) 1% 73% no-repeat;
+
+      & span {
+         padding-left: 30px;
+         line-height: 1.7;
+      }
+   }
+
+   &__phone-block {
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+      gap: 22px;
+   }
+
+   &__phone-link {
+      font-size: 18px;
+      color: $black;
+
+      @include media(1024) {
+         font-size: 30px;
+      }
+   }
+}
