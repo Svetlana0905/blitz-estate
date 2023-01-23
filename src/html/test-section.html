@@ -1,23 +1,35 @@
 <section class="test">
    <h2>Пройдите тест из 5 вопросов</h2>
    <h4 class="subtitle">Мы подберём 20 покупателей, готовых купить вашу недвижимость в течение 24 часов</h4>
-   <form class="test__slider-test">
-      <div class="test__slider-inner">
-         <h3 class="test__slider-title">Выберите местоположение объекта</h3>
-         <div class="slider">
-            <p>slider</p>
+   <div class="test__container">
+      <form class="slider">
+         <h3>Выберите местоположение объекта</h3>
+         <div class="slider__inner">
+            <label class="slider__item">
+               <input class="radio" type="radio" name="location" value="В России">
+               <img src="../images/test_slider/slide1.jpg" alt="В России">
+               <span>В России</span>
+            </label>
+            <label class="slider__item">
+               <input class="radio" type="radio" name="location" value="За границей">
+               <img src="../images/test_slider/slide2.jpg" alt="За границей">
+               <span>За границей</span>
+            </label>
          </div>
-
          <div class="slider__bottom">
             <p class="slider__count-question">Вы ответили на: 0/5 вопросов</p>
             <button class="slider__next-btn">Продолжить</button>
             <button class="slider__prev-btn">Назад</button>
          </div>
-      </div>
-      <ul class="test__descriptions">
-         <li>Поможем Вам приобрести, продать или арендовать необходимую недвижимость</li>
-         <li>Продадим вашу недвижимость за 21 день или выкупим сами по стоимостьи в договоре</li>
-         <li>Забронируем понравившуюся квартиру и зафиксируем стоимость для вас на момент бронирования</li>
+      </form>
+      <ul class="test__list list">
+         <li class="list__item primary-text">Поможем Вам приобрести, продать или арендовать необходимую недвижимость
+         </li>
+         <li class="list__item primary-text">Продадим вашу недвижимость за 21 день или выкупим сами по стоимостьи в
+            договоре</li>
+         <li class="list__item primary-text">Забронируем понравившуюся квартиру и зафиксируем стоимость для вас на
+            момент
+            бронирования</li>
       </ul>
-   </form>
+   </div>
 </section>

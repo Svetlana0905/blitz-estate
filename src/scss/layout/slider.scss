@@ -1,0 +1,36 @@
+.slider {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   padding: 43px 40px 18px 36px;
+
+   &__inner {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      padding-bottom: 26px;
+      border-bottom: 3px solid $grayColor;
+      ;
+   }
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      font-weight: 500;
+
+      & span {
+         opacity: 0.5;
+      }
+
+      &:has(.radio:checked) span {
+         color: $blue;
+         opacity: 1;
+      }
+
+      & input {
+         width: 0;
+         height: 0;
+      }
+   }
+}

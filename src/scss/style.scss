@@ -18,6 +18,7 @@
 @import 'layout/buttons';
 @import 'layout/header-section';
 @import 'layout/test';
+@import 'layout/slider';
 @import 'layout/footer';
 
 .main {
@@ -83,4 +84,14 @@ h3 {
 
 .small-bold-text {
    font-weight: 500;
+}
+
+.primary-text {
+   font-size: 16px;
+   line-height: 26px;
+   letter-spacing: 0em;
+}
+
+.text-opacity-05 {
+   opacity: 0.5;
 }
