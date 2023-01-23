@@ -290,19 +290,21 @@ sup {
           align-items: center;
   margin: 0 auto;
   padding-top: 60px;
+  gap: 30px;
 }
 
 .test .subtitle {
   margin-bottom: 42px;
 }
 
-.test__slider-test {
+.test__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 3px solid #f6f6f6;
 }
 
-.test__slider-inner {
+.test__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,9 +312,30 @@ sup {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 365px;
+  padding: 40px;
+  border-left: 3px solid #f6f6f6;
 }
 
-.test__descriptions {
+.list__item {
+  position: relative;
+  padding-left: 64px;
+}
+
+.list__item::before {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 39px;
+  top: 7px;
+  left: 0;
+  background: url(../images/icon/blue_arrow.svg);
+}
+
+.slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,8 +344,46 @@ sup {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
-  max-width: 360px;
-  padding: 40px;
+  padding: 43px 40px 18px 36px;
+}
+
+.slider__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  padding-bottom: 26px;
+  border-bottom: 3px solid #f6f6f6;
+}
+
+.slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  font-weight: 500;
+}
+
+.slider__item span {
+  opacity: 0.5;
+}
+
+.slider__item:has(.radio:checked) span {
+  color: #2A94E2;
+  opacity: 1;
+}
+
+.slider__item input {
+  width: 0;
+  height: 0;
 }
 
 .footer__container {
@@ -375,6 +436,16 @@ h3 {
 
 .small-bold-text {
   font-weight: 500;
+}
+
+.primary-text {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+
+.text-opacity-05 {
+  opacity: 0.5;
 }
 
 @media (min-width: 407.98px) {
