@@ -1,19 +1,42 @@
 .order-call-button {
-   border: 1px solid $blue;
+   position: relative;
    padding: 15px 0 18px;
    max-width: 272px;
    background: transparent;
-   border-radius: $mainRadius;
-   font-size: 16px;
+   font-size: 1rem;
    font-weight: 600;
    transition: $standartTrans;
 
-   &:hover,
-   &:focus {
-      background: $darkBlue;
-      color: $white;
+   &::before,
+   &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: $mainRadius;
+      border: 1px solid $blue;
+      z-index: 0;
+      transition: $standartTrans;
    }
 
+   &::after {
+      opacity: 0;
+      border: 1px solid $black;
+      transform: translateY(-5px) translateX(5px);
+   }
+
+   &:hover::after {
+      opacity: 1;
+      transform: translateY(0px) translateX(0px);
+   }
+
+   &:hover,
+   &:focus {
+      color: $blue;
+      box-shadow: $btnBoxShadow;
+   }
 }
 
 .primary-button {
@@ -27,7 +50,9 @@
 
    &:hover,
    &:focus {
+      color: $black;
       box-shadow: $btnBoxShadow;
+      border-radius: $secondaryRadius;
    }
 }
 
@@ -57,11 +82,37 @@
 
 .next-btn::after {
    right: -20px;
-   background: url(./../../images/icon/blue-arrow.svg);
+   background: url(../images/icon/blue-arrow.svg);
 }
 
 .prev-btn::before {
    left: -22px;
-   background: url(./../../images/icon/blue-arrow.svg);
+   background: url(../images/icon/blue-arrow.svg);
    transform: rotate(180deg);
+}
+
+.popup__btn-close {
+   position: relative;
+   width: 20px;
+   height: 20px;
+   background: $white;
+
+   &::before,
+   &::after {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 2px;
+      background: $red;
+      top: 50%;
+      left: 0;
+   }
+
+   &::before {
+      transform: rotate(45deg);
+   }
+
+   &::after {
+      transform: rotate(134deg);
+   }
 }

@@ -5,9 +5,11 @@ $mainFont: 'Geometria'; // !указать здесь основное семе�
 $mainWeight: 400; // !указать здесь основное начертание шрифта
 
 $mainRadius: rem(5);
+$secondaryRadius: rem(15);
 
 $white: #fff;
 $black: #000;
+$black80: rgba(0, 0, 0, 0.8);
 $grayColor: #f6f6f6;
 $blue: #2A94E2;
 $darkBlue: #033a61;
@@ -22,14 +24,7 @@ $fontWeight: $mainWeight; // Жирность шрифта по умолчани
 $standartBorder: 3px solid $grayColor;
 
 $standartTrans: all 280ms ease-in-out 0ms;
+$longTrans: all 700ms ease-in-out 0ms;
 
-$btnBoxShadow: 0px 2px 3px rgba(#033a61, 10%),
-   0px 8px 3px rgba(#033a61, 10%);
-
-// $lightBoxShadow: 0 0 2px 0 rgba(#000, 10%),
-//    0 0 4px 0 rgba(#000, 10%),
-//    0 0 8px 0 rgba(#000, 10%);
-
-// $hoverBoxShadow: 0 0 5px 0 rgba(#000, 10%),
-//    0 0 10px 0 rgba(#000, 10%),
-//    0 0 15px 0 rgba(#000, 10%);
+$btnBoxShadow: 0px 2px 3px rgba($darkBlue, 10%),
+   0px 8px 3px rgba($darkBlue, 10%);

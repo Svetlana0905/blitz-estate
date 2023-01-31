@@ -1,0 +1,66 @@
+.popup {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: $black80;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+   overflow-y: auto;
+   overflow-x: hidden;
+   transition: $longTrans;
+   z-index: 2;
+
+   &.active {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   &.active &__container {
+      transform: perspective(600px) translate(0px, 30%) rotateX(0deg);
+      opacity: 1;
+   }
+
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__container {
+      margin: 0 auto;
+      max-width: 400px;
+      padding: 30px;
+      position: relative;
+      transition: $longTrans;
+      opacity: 0;
+      background-color: $white;
+      border-radius: $secondaryRadius;
+      transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+   }
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      margin: 0 auto;
+      max-width: 500px;
+      padding: 15px;
+      background: $white;
+      border-radius: $secondaryRadius;
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      & .primary-button {
+         width: 200px;
+         height: 50px;
+      }
+   }
+}

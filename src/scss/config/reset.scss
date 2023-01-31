@@ -6,12 +6,12 @@
   color: $fontColor;
 }
 
-*:before, 
+*:before,
 *:after {
   box-sizing: border-box;
 }
 
-:focus, 
+:focus,
 :active {
   outline: none;
 }
@@ -30,12 +30,13 @@ aside {
 
 html,
 body {
-	width: 100%;
+  width: 100%;
   height: 100%;
-	font-size: $fontSize;
+  font-size: $fontSize;
   font-family: $fontFamily;
   font-weight: $fontWeight;
-	line-height: 1;
+  line-height: 1;
+  // position: relative;
 }
 
 input,
@@ -50,7 +51,7 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
-} 
+}
 
 button::-moz-focus-inner {
   padding: 0;
@@ -59,18 +60,20 @@ button::-moz-focus-inner {
 
 a {
   text-decoration: none;
+
   &:visited {
     text-decoration: none;
   }
+
   &:hover {
     text-decoration: none;
   }
 }
 
-ul, 
+ul,
 li {
   list-style: none;
-} 
+}
 
 img {
   vertical-align: top;
@@ -82,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size:inherit;
+  font-size: inherit;
   font-weight: 400;
 }
 
