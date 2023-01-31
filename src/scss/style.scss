@@ -1,19 +1,21 @@
 @use 'sass:math';
 
-// Подключение шрифтов локально из папки "./src/fonts" =======================================================================================================================
+// Подключение шрифтов локально из папки "./src/fonts"
 @import 'config/fonts';
 
-// Подключение sass функций и миксинов и рассширений стилей =======================================================================================================================
+// Подключение sass функций и миксинов и рассширений стилей 
 @import 'config/functions';
 
-// Подключение переменных =======================================================================================================================
+// Подключение переменных 
 @import 'config/vars';
 
-// Обнуление =======================================================================================================================
+// Обнуление 
 @import 'config/reset';
 
+// Шрифты 
+@import 'config/typography';
 
-// Подключение стилей отдельных блоков и секций =======================================================================================================================
+// Подключение стилей отдельных блоков и секций 
 @import 'layout/header';
 @import 'layout/buttons';
 @import 'layout/header-section';
@@ -25,73 +27,5 @@
    max-width: $maxWidth;
    width: 100%;
    margin: 0 auto;
-}
-
-h1 {
-   margin-bottom: 22px;
-   font-size: 30px;
-   font-weight: 600;
-   text-transform: uppercase;
-   line-height: 1.5;
-   margin-top: 0;
-
-   @include media(768) {
-      font-size: 40px;
-      font-weight: 900;
-      margin-top: -4px;
-   }
-
-   @include media(1024) {
-      font-size: 50px;
-   }
-}
-
-h2 {
-   font-size: 35px;
-   line-height: 48px;
-   font-weight: 600;
-}
-
-h3 {
-   font-size: 22px;
-   line-height: 33px;
-   letter-spacing: 0em;
-   font-weight: 600;
-}
-
-.subtitle {
-   font-weight: 400;
-   font-size: 18px;
-   line-height: 1.6;
-
-   @include media(768) {
-      font-size: 22px;
-   }
-}
-
-.big-text {
-   font-size: 30px;
-   line-height: 0.9;
-
-   @include media(768) {
-      font-size: 60px;
-   }
-
-   @include media(1024) {
-      font-size: 80px;
-   }
-}
-
-.small-bold-text {
-   font-weight: 500;
-}
-
-.primary-text {
-   font-size: 16px;
-   line-height: 26px;
-   letter-spacing: 0em;
-}
-
-.text-opacity-05 {
-   opacity: 0.5;
+   padding: 0 5px;
 }

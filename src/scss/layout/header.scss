@@ -5,7 +5,6 @@
    max-width: $maxWidth;
 
    &__logo-block {
-
       display: flex;
       align-items: center;
       padding-top: 14px;
@@ -33,8 +32,12 @@
    &__phone-block {
       display: flex;
       flex-direction: column;
-      padding-top: 50px;
+      padding-top: 20px;
       gap: 22px;
+
+      @include media(600) {
+         padding-top: 50px;
+      }
    }
 
    &__phone-link {

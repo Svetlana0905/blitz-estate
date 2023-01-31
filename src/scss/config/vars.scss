@@ -10,6 +10,7 @@ $white: #fff;
 $black: #000;
 $grayColor: #f6f6f6;
 $blue: #2A94E2;
+$darkBlue: #033a61;
 $red: #ff4040;
 
 
@@ -18,10 +19,12 @@ $fontColor: $black; // Цвет шрифта по умолчанию
 $fontSize: rem(16); // Размер шрифта по умолчанию
 $fontWeight: $mainWeight; // Жирность шрифта по умолчанию
 
-// $standartTrans: all 280ms ease-in-out 0ms;
+$standartBorder: 3px solid $grayColor;
 
-// $btnBoxShadow: 0px 2px 3px rgba(#000, 10%),
-//    0px 8px 3px rgba(#000, 10%);
+$standartTrans: all 280ms ease-in-out 0ms;
+
+$btnBoxShadow: 0px 2px 3px rgba(#033a61, 10%),
+   0px 8px 3px rgba(#033a61, 10%);
 
 // $lightBoxShadow: 0 0 2px 0 rgba(#000, 10%),
 //    0 0 4px 0 rgba(#000, 10%),

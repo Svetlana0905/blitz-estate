@@ -4,24 +4,46 @@
    align-items: center;
    margin: 0 auto;
    padding-top: 60px;
-   gap: 30px;
+
+   & h2 {
+      margin-bottom: 7px;
+      margin-left: 8px;
+   }
 
    & .subtitle {
-      margin-bottom: 42px;
+      margin-bottom: 53px;
+      margin-left: 6px;
    }
 
    &__container {
       display: flex;
-      border: 3px solid $grayColor;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: $maxWidth;
+      width: 100%;
+      margin-left: 0;
+      border: $standartBorder;
+
+      @include media(1120) {
+         flex-wrap: nowrap;
+         margin-left: 15px;
+      }
    }
 
    &__list {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      max-width: 365px;
-      padding: 40px;
-      border-left: 3px solid $grayColor;
+      width: 100%;
+      gap: 15px;
+      padding: 28px 44px 10px 39px;
+      border-left: none;
+
+      @include media(1120) {
+         max-width: 365px;
+         gap: 31px;
+         border-left: $standartBorder;
+      }
 
    }
 }

@@ -1,11 +1,18 @@
 .order-call-button {
-   background: transparent;
    border: 1px solid $blue;
    padding: 15px 0 18px;
    max-width: 272px;
+   background: transparent;
    border-radius: $mainRadius;
    font-size: 16px;
    font-weight: 600;
+   transition: $standartTrans;
+
+   &:hover,
+   &:focus {
+      background: $darkBlue;
+      color: $white;
+   }
 
 }
 
@@ -16,4 +23,45 @@
    color: $white;
    background: $blue;
    border-radius: $mainRadius;
+   transition: $standartTrans;
+
+   &:hover,
+   &:focus {
+      box-shadow: $btnBoxShadow;
+   }
+}
+
+.next-btn,
+.prev-btn {
+   position: relative;
+   font-size: 16px;
+   line-height: 1.2;
+   padding: 12px 17px;
+   color: $blue;
+   background: transparent;
+}
+
+.next-btn {
+   margin-right: 19px;
+}
+
+.prev-btn::before,
+.next-btn::after {
+   content: '';
+   position: absolute;
+   top: 15px;
+   height: 14px;
+   width: 22px;
+
+}
+
+.next-btn::after {
+   right: -20px;
+   background: url(./../../images/icon/blue-arrow.svg);
+}
+
+.prev-btn::before {
+   left: -22px;
+   background: url(./../../images/icon/blue-arrow.svg);
+   transform: rotate(180deg);
 }
