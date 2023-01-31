@@ -299,12 +299,12 @@ h3 {
 
 .next-btn::after {
   right: -20px;
-  background: url(./images/icon/blue-arrow.svg);
+  background: url(../images/icon/blue-arrow.svg);
 }
 
 .prev-btn::before {
   left: -22px;
-  background: url(./images/icon/blue-arrow.svg);
+  background: url(../images/icon/blue-arrow.svg);
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
