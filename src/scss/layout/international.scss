@@ -11,14 +11,30 @@
    &__grid {
       display: grid;
       max-width: $maxWidth;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 300px);
       gap: 10px;
-      margin: 0 auto;
       grid-template-areas:
-         "a b c"
-         "a d d"
-         "e e f";
+         "a a"
+         "b b"
+         "c c"
+         "d d"
+         "e e"
+         "f f";
+
+      @include media(650) {
+         grid-template-areas:
+            "a b"
+            "a c"
+            "d d"
+            "e e"
+            "f f";
+      }
+
+      @include media(1024) {
+         grid-template-areas:
+            "a b c"
+            "a d d"
+            "e e f";
+      }
    }
 }
 
@@ -27,6 +43,7 @@
       position: relative;
       background: $black;
       cursor: pointer;
+      min-height: 300px;
 
       &::after {
          position: absolute;
