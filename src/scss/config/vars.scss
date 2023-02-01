@@ -25,6 +25,8 @@ $standartBorder: 3px solid $grayColor;
 
 $standartTrans: all 280ms ease-in-out 0ms;
 $longTrans: all 700ms ease-in-out 0ms;
+$transormPopupStart: perspective(600px) translate(0px, -100%) rotateX(45deg);
+$transormPopupAnd: perspective(600px) translate(0px, 30%) rotateX(0deg);
 
 $btnBoxShadow: 0px 2px 3px rgba($darkBlue, 10%),
    0px 8px 3px rgba($darkBlue, 10%);

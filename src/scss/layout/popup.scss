@@ -18,7 +18,7 @@
    }
 
    &.active &__container {
-      transform: perspective(600px) translate(0px, 30%) rotateX(0deg);
+      transform: $transormPopupAnd;
       opacity: 1;
    }
 
@@ -37,7 +37,7 @@
       opacity: 0;
       background-color: $white;
       border-radius: $secondaryRadius;
-      transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+      transform: $transormPopupStart;
    }
 
    &__body {
