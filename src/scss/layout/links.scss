@@ -1,0 +1,21 @@
+.button-link {
+   display: flex;
+   height: 60px;
+   max-width: 333px;
+   width: 100%;
+   font-size: 16px;
+   line-height: 24px;
+   align-items: center;
+   justify-content: center;
+   color: $white;
+   background: $blue;
+   border-radius: $mainRadius;
+   transition: $standartTrans;
+
+   &:hover,
+   &:focus {
+      color: $black;
+      box-shadow: $btnBoxShadow;
+      border-radius: $secondaryRadius;
+   }
+}
