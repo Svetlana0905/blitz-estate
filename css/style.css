@@ -281,6 +281,37 @@ h3 {
   height: 50px;
 }
 
+.button-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  max-width: 333px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background: #2A94E2;
+  border-radius: 0.3125rem;
+  -webkit-transition: all 280ms ease-in-out 0ms;
+  -o-transition: all 280ms ease-in-out 0ms;
+  transition: all 280ms ease-in-out 0ms;
+}
+
+.button-link:hover,
+.button-link:focus {
+  color: #000;
+  -webkit-box-shadow: 0px 2px 3px rgba(3, 58, 97, 0.1), 0px 8px 3px rgba(3, 58, 97, 0.1);
+          box-shadow: 0px 2px 3px rgba(3, 58, 97, 0.1), 0px 8px 3px rgba(3, 58, 97, 0.1);
+  border-radius: 0.9375rem;
+}
+
 .primary-input {
   max-width: 300px;
   min-width: 250px;
@@ -747,6 +778,156 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
+}
+
+.international {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.international h2 {
+  margin-bottom: 30px;
+}
+
+.international__grid {
+  display: -ms-grid;
+  display: grid;
+  max-width: 1140px;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 300px 10px 300px 10px 300px;
+  grid-template-rows: repeat(3, 300px);
+  gap: 10px;
+  margin: 0 auto;
+      grid-template-areas: "a b c" "a d d" "e e f";
+}
+
+.grid-international__item {
+  position: relative;
+  background: #000;
+  cursor: pointer;
+}
+
+.grid-international__item::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(26.23%, rgba(83, 88, 96, 0)), color-stop(52.73%, rgba(37, 44, 56, 0.56)), to(#252C38));
+  background: -o-linear-gradient(top, rgba(83, 88, 96, 0) 26.23%, rgba(37, 44, 56, 0.56) 52.73%, #252C38 100%);
+  background: linear-gradient(180deg, rgba(83, 88, 96, 0) 26.23%, rgba(37, 44, 56, 0.56) 52.73%, #252C38 100%);
+}
+
+.grid-international__item img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid-international__item:hover img {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.grid-international__title {
+  text-align: start;
+  color: #fff;
+  line-height: 1;
+}
+
+.grid-international__content {
+  position: absolute;
+  bottom: 0;
+  padding: 0 10px 20px;
+  z-index: 5;
+}
+
+.grid-international__content-inner {
+  display: none;
+}
+
+.grid-international__item:first-child {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+.grid-international__item:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: b;
+}
+
+.grid-international__item:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: c;
+}
+
+.grid-international__item:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: d;
+}
+
+.grid-international__item:nth-child(5) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: e;
+}
+
+.grid-international__item:nth-child(6) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  grid-area: f;
+}
+
+.item-international__content-inner {
+  position: fixed;
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: all 700ms ease-in-out 0ms;
+  -o-transition: all 700ms ease-in-out 0ms;
+  transition: all 700ms ease-in-out 0ms;
+}
+
+.item-international__text {
+  color: #fff;
+}
+
+.item-international:hover .item-international__content-inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .footer__container {
