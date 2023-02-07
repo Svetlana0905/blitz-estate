@@ -34,7 +34,7 @@
   font-family: Geometria;
   font-display: swap;
   src: url("../fonts/Geometria-Heavy.woff2") format("woff2"), url("../fonts/Geometria-Heavy.woff") format("woff");
-  font-weight: 800;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -186,6 +186,11 @@ h3 {
 
 .text-opacity-05 {
   opacity: 0.5;
+}
+
+.big-price-text {
+  font-size: 33px;
+  line-height: 54px;
 }
 
 .popup {
@@ -546,6 +551,24 @@ h3 {
           transform: rotate(134deg);
 }
 
+.appartment-button {
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #000;
+  background: #f6f6f6;
+  -webkit-transition: all 280ms ease-in-out 0ms;
+  -o-transition: all 280ms ease-in-out 0ms;
+  transition: all 280ms ease-in-out 0ms;
+}
+
+.appartment-button:hover {
+  background: #2A94E2;
+  color: #fff;
+}
+
 .no-webp .header-section {
   background: url("../images/header_bg.jpg") 50%/cover; }
 
@@ -788,10 +811,10 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 60px 0;
 }
 
 .international h2 {
@@ -930,6 +953,146 @@ h3 {
           transform: scale(1);
 }
 
+.apartments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 74px;
+}
+
+.apartments h2 {
+  margin-bottom: 7px;
+}
+
+.apartments h4 {
+  margin-bottom: 2.125em;
+}
+
+.apartments__form-apartments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.apartments__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.form-apartments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 28px;
+  border: 2px solid #f6f6f6;
+}
+
+.form-apartments__input {
+  width: 100%;
+  height: 100%;
+  padding: 19px 10px 21px;
+  color: #000;
+  font-size: 16px;
+  background: #fff;
+  -webkit-transition: all 700ms ease-in-out 0ms;
+  -o-transition: all 700ms ease-in-out 0ms;
+  transition: all 700ms ease-in-out 0ms;
+}
+
+.form-apartments__input:active,
+.form-apartments__input:focus {
+  color: #fff;
+  background: #2A94E2;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.form-apartments__input:hover {
+  color: #000;
+  background: #f6f6f6;
+  cursor: pointer;
+}
+
+.form-apartments__input:not(:last-child) {
+  border-right: 2px solid #f6f6f6;
+}
+
+.apartment-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 554px;
+  width: 100%;
+}
+
+.apartment-card img {
+  margin-bottom: 23px;
+}
+
+.apartment-card__content {
+  padding: 0 28px;
+  border: 1px solid #f6f6f6;
+  border-top: 0px;
+}
+
+.apartment-card h3 {
+  margin-bottom: 11px;
+  font-weight: 800;
+}
+
+.apartment-card__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  padding-top: 17px;
+  margin-bottom: 26px;
+}
+
+.apartment-card__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.apartment-card__column .big-price-text {
+  margin-bottom: 13px;
+}
+
+.apartment-card__column-square {
+  padding-top: 20px;
+}
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -943,7 +1106,6 @@ h3 {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 5px;
 }
 
 .disable-scroll {
