@@ -1,0 +1,16 @@
+<section class="apartments">
+   <h2>Выберите апартаменты в Москва-Сити</h2>
+   <h4 class="subtitle">Мы включили в наш каталог все апартаменты доступные для покупки в Москва-Сити</h4>
+   <form method="get" class="form-apartments">
+
+      <input class="form-apartments__input" readonly type="submit" value="Показать все">
+      <input class="form-apartments__input" readonly type="submit" value="От 20-30 млн">
+      <input class="form-apartments__input" readonly type="submit" value="От 30-50 млн">
+      <input class="form-apartments__input" readonly type="submit" value="От 50-100 млн">
+      <input class="form-apartments__input" readonly type="submit" value="Более 100 млн">
+
+   </form>
+   <section class="apartments__cards">
+      @@include('./apartment-card.html',{})
+   </section>
+</section>

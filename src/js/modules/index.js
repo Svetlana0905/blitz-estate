@@ -1,4 +1,5 @@
-import { html, body, popUp, openPopUp, closePopUp } from './../helpers/elementsNodeList'
+import { html, body, popUp, openPopUp, closePopUp, form, cards } from './../helpers/elementsNodeList'
+import { data } from './../dataCard'
 
 // logger (Full Logging System) 
 function FLS(message) {
@@ -64,9 +65,76 @@ function closePopUpActions() {
   })
 }
 
+function filterPriceForm() {
+  form.addEventListener('click', function (e) {
+    e.preventDefault();
+    console.log('click')
+  })
+}
+
+function createElements() {
+  const article = document.createElement('article')
+  const img = document.createElement('img')
+  const content = document.createElement('div')
+  const h3 = document.createElement('h3')
+  const span = document.createElement('span')
+  const row = document.createElement('div')
+  const column = document.createElement('div')
+  const rightColumn = document.createElement('div')
+  const p = document.createElement('p')
+  const bigText = document.createElement('p')
+  const meter = document.createElement('p')
+  const button = document.createElement('button')
+  const columnSquare = document.createElement('p')
+
+  return { article, img, content, h3, span, row, column, p, button, bigText, columnSquare, meter, rightColumn }
+}
+
+const setAttribute = ({ article, content, row, column, button, bigText, columnSquare, rightColumn }) => {
+  article.setAttribute('class', 'apartment-card')
+  content.setAttribute('class', 'apartment-card__content')
+  row.setAttribute('class', 'apartment-card__row')
+  column.setAttribute('class', 'apartment-card__column')
+  rightColumn.setAttribute('class', 'apartment-card__column')
+  bigText.setAttribute('class', 'big-price-text')
+  columnSquare.setAttribute('class', 'apartment-card__column-square')
+  button.setAttribute('class', 'appartment-button')
+}
+
+const init = () => {
+
+  data.map(item => {
+    const { article, img, content, h3, span, row, column, p, button, bigText, columnSquare, meter, rightColumn } = createElements()
+    setAttribute({ article, img, content, h3, span, row, column, p, button, bigText, columnSquare, rightColumn })
+    cards.appendChild(article)
+    article.appendChild(img)
+    img.src = `${item.src}`
+    article.appendChild(content)
+    content.appendChild(h3)
+    h3.textContent = `${item.title}`
+    content.appendChild(span)
+    span.textContent = `${item.span}`
+    content.appendChild(row)
+    row.appendChild(column)
+    column.appendChild(bigText)
+    bigText.textContent = `${item.price}`
+    column.appendChild(meter)
+    meter.textContent = `${item.meter}`
+    row.appendChild(rightColumn)
+    rightColumn.appendChild(columnSquare)
+    columnSquare.textContent = `${item.square}`
+    rightColumn.appendChild(p)
+    p.textContent = `${item.floor}`
+    article.appendChild(button)
+    button.textContent = 'Назначить просмотр'
+  })
+}
+
 export {
   FLS,
   isWebp,
   openPopUpActions,
-  closePopUpActions
+  closePopUpActions,
+  filterPriceForm,
+  init
 }

@@ -21,7 +21,9 @@ $fontColor: $black; // Цвет шрифта по умолчанию
 $fontSize: rem(16); // Размер шрифта по умолчанию
 $fontWeight: $mainWeight; // Жирность шрифта по умолчанию
 
-$standartBorder: 3px solid $grayColor;
+$border1: 1px solid $grayColor;
+$border2: 2px solid $grayColor;
+$border3: 3px solid $grayColor;
 
 $standartTrans: all 280ms ease-in-out 0ms;
 $longTrans: all 700ms ease-in-out 0ms;

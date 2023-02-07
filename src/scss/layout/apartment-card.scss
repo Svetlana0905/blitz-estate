@@ -1,0 +1,47 @@
+.apartment-card {
+   display: flex;
+   flex-direction: column;
+   max-width: 554px;
+   width: 100%;
+   margin: 0 auto;
+
+   & img {
+      margin-bottom: 23px;
+      object-fit: cover;
+   }
+
+   &__content {
+      width: 100%;
+      padding: 0 28px;
+      border: $border1;
+      border-top: 0px;
+   }
+
+   & h3 {
+      margin-bottom: 11px;
+      font-weight: 800;
+   }
+
+   &__row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 17px;
+      margin-bottom: 26px;
+   }
+
+   &__column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & .big-price-text {
+         margin-bottom: 13px;
+      }
+   }
+
+   &__column-square {
+      padding-top: 20px;
+   }
+}

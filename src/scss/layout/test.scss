@@ -23,7 +23,7 @@
       max-width: $maxWidth;
       width: 100%;
       margin-left: 0;
-      border: $standartBorder;
+      border: $border3;
 
       @include media(1120) {
          flex-wrap: nowrap;
@@ -42,7 +42,7 @@
       @include media(1120) {
          max-width: 365px;
          gap: 31px;
-         border-left: $standartBorder;
+         border-left: $border3;
       }
 
    }

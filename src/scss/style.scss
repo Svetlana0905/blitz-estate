@@ -25,13 +25,15 @@
 @import 'layout/test';
 @import 'layout/slider';
 @import 'layout/international';
+@import 'layout/apartments';
+@import 'layout/apartment-card';
 @import 'layout/footer';
 
 .main {
    max-width: $maxWidth;
    width: 100%;
    margin: 0 auto;
-   padding: 0 5px;
+   // padding: 0 5px;
 }
 
 .disable-scroll {
