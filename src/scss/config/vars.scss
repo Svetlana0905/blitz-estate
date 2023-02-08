@@ -10,7 +10,9 @@ $secondaryRadius: rem(15);
 $white: #fff;
 $black: #000;
 $black80: rgba(0, 0, 0, 0.8);
+
 $grayColor: #f6f6f6;
+$gray50: rgba(246, 246, 246, 0.5);
 $blue: #2A94E2;
 $darkBlue: #033a61;
 $red: #ff4040;
@@ -25,12 +27,15 @@ $border1: 1px solid $grayColor;
 $border2: 2px solid $grayColor;
 $border3: 3px solid $grayColor;
 
+$border1black: 1px solid $black;
+$border2white: 2px solid $white;
+
 $standartTrans: all 280ms ease-in-out 0ms;
 $longTrans: all 700ms ease-in-out 0ms;
 $transormPopupStart: perspective(600px) translate(0px, -100%) rotateX(45deg);
 $transormPopupAnd: perspective(600px) translate(0px, 30%) rotateX(0deg);
 
-$btnBoxShadow: 0px 2px 3px rgba($darkBlue, 10%),
-   0px 8px 3px rgba($darkBlue, 10%);
+$btnBoxShadow: 0px 2px 3px rgba($darkBlue, 10%), 0px 8px 3px rgba($darkBlue, 10%);
+$cardBoxShadow: 0px 5px 18px rgba($darkBlue, 30%);
 
 $imgGradient: linear-gradient(180deg, rgba(83, 88, 96, 0) 26.23%, rgba(37, 44, 56, 0.56) 52.73%, #252C38 100%);

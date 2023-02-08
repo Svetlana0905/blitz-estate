@@ -118,7 +118,7 @@
    }
 
    &::after {
-      transform: rotate(134deg);
+      transform: rotate(135deg);
    }
 }
 
@@ -129,11 +129,64 @@
    line-height: 27px;
    font-weight: 500;
    color: $black;
-   background: $grayColor;
-   transition: $standartTrans;
 
    &:hover {
       background: $blue;
       color: $white;
+      animation: gradient 1s ease-out;
+   }
+
+   &__primary-btn {
+      position: relative;
+      background: $gray50;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+
+      &:hover {
+         box-shadow: $cardBoxShadow;
+      }
+
+      &::after {
+         position: absolute;
+         content: '';
+         width: 9px;
+         height: 9px;
+         border-top: $border1black;
+         border-right: $border1black;
+         transform: translate(10px, 8px) rotate(135deg);
+         transition: $standartTrans;
+      }
+
+      &:hover::after {
+         border-top: 2px solid $white;
+         border-right: 2px solid $white;
+      }
+
+      &:active::after {
+         border-top: $border2white;
+         border-right: $border2white;
+         transform: translate(10px, 12px) rotate(315deg);
+      }
+   }
+}
+
+@keyframes gradient {
+   0% {
+      background-position: 0% 0%;
+      background-size: 0% 0%;
+      background-color: $white;
+   }
+
+   50% {
+      background-position: 50% 50%;
+      background-size: 50% 0;
+      background-color: $darkBlue;
+
+   }
+
+   100% {
+      background-position: 100% 100%;
+      background-size: 100% 100%;
    }
 }

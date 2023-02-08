@@ -1,0 +1,26 @@
+// [data-aos="scroll-left1"] {
+//    transform: translate(-1500px, 0px);
+//    transition: all 1s ease 0.3s;
+// }
+
+// [data-aos="scroll-left1"].aos-animate {
+//    transform: translate(0px, 0px);
+// }
+
+// [data-aos="scroll-right1"] {
+//    transform: translate(1500px, 0px);
+//    transition: all 1s ease 0.3s;
+// }
+
+// [data-aos="scroll-right1"].aos-animate {
+//    transform: translate(0px, 0px);
+// }
+
+[data-aos="scroll-bottom"] {
+   transform: translate(0px, 700px);
+   transition: all 1s ease 0.3s;
+}
+
+[data-aos="scroll-bottom"].aos-animate {
+   transform: translate(0px, 0px);
+}

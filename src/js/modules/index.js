@@ -92,6 +92,7 @@ function createElements() {
 
 const setAttribute = ({ article, content, row, column, button, bigText, columnSquare, rightColumn }) => {
   article.setAttribute('class', 'apartment-card')
+  article.setAttribute('data-aos', 'scroll-bottom')
   content.setAttribute('class', 'apartment-card__content')
   row.setAttribute('class', 'apartment-card__row')
   column.setAttribute('class', 'apartment-card__column')
