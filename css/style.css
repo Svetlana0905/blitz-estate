@@ -193,6 +193,51 @@ h3 {
   line-height: 54px;
 }
 
+[data-aos=scroll-left1] {
+  -webkit-transform: translate(-1500px, 0px);
+      -ms-transform: translate(-1500px, 0px);
+          transform: translate(-1500px, 0px);
+  -webkit-transition: all 1s ease 0.3s;
+  -o-transition: all 1s ease 0.3s;
+  transition: all 1s ease 0.3s;
+}
+
+[data-aos=scroll-left1].aos-animate {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+[data-aos=scroll-right1] {
+  -webkit-transform: translate(1500px, 0px);
+      -ms-transform: translate(1500px, 0px);
+          transform: translate(1500px, 0px);
+  -webkit-transition: all 1s ease 0.3s;
+  -o-transition: all 1s ease 0.3s;
+  transition: all 1s ease 0.3s;
+}
+
+[data-aos=scroll-right1].aos-animate {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+[data-aos=scroll-bottom] {
+  -webkit-transform: translate(0px, 700px);
+      -ms-transform: translate(0px, 700px);
+          transform: translate(0px, 700px);
+  -webkit-transition: all 1s ease 0.5s;
+  -o-transition: all 1s ease 0.5s;
+  transition: all 1s ease 0.5s;
+}
+
+[data-aos=scroll-bottom].aos-animate {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
 .popup {
   position: fixed;
   width: 100%;
