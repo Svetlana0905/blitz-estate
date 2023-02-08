@@ -7,13 +7,12 @@
 
    & img {
       width: 100%;
-      margin-bottom: 23px;
       object-fit: cover;
    }
 
    &__content {
       width: 100%;
-      padding: 0 28px;
+      padding: 23px 28px 0;
       border: $border1;
       border-top: 0px;
    }

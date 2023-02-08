@@ -33,6 +33,11 @@
       gap: 24px;
       font-weight: 500;
 
+      &:hover,
+      &:focus {
+         cursor: pointer;
+      }
+
       & span {
          font-weight: 600;
          opacity: 0.5;

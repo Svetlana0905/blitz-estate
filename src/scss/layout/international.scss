@@ -74,9 +74,7 @@
    }
 
    &__item:hover .item-international__content-inner,
-   &__item:focus .item-international__content-inner,
-   &__item:active .item-international__content-inner,
-   &__item:focus-visible .item-international__content-inner {
+   &__item:focus-within .item-international__content-inner {
       position: relative;
       display: flex;
       flex-direction: column;
