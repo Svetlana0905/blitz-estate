@@ -6,6 +6,7 @@
 
    & h2 {
       margin-bottom: 30px;
+      text-align: center;
    }
 
    &__grid {
@@ -72,6 +73,19 @@
       filter: brightness(40%)
    }
 
+   &__item:hover .item-international__content-inner,
+   &__item:focus .item-international__content-inner,
+   &__item:active .item-international__content-inner,
+   &__item:focus-visible .item-international__content-inner {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 20px;
+      opacity: 1;
+      transform: scale(1);
+   }
+
    &__title {
       text-align: start;
       color: $white;
@@ -127,13 +141,15 @@
       color: $white;
    }
 
-   &:hover &__content-inner {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding-top: 20px;
-      opacity: 1;
-      transform: scale(1);
-   }
+   // &:hover &__content-inner,
+   // &:focus &__content-inner,
+   // &:active &__content-inner {
+   //    position: relative;
+   //    display: flex;
+   //    flex-direction: column;
+   //    gap: 20px;
+   //    padding-top: 20px;
+   //    opacity: 1;
+   //    transform: scale(1);
+   // }
 }

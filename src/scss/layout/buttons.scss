@@ -64,6 +64,11 @@
    padding: 12px 17px;
    color: $blue;
    background: transparent;
+
+   &:focus,
+   &:hover {
+      color: $darkBlue;
+   }
 }
 
 .next-btn {

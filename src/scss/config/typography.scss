@@ -18,11 +18,12 @@ h1 {
 
 h2 {
    font-size: 24px;
-   line-height: 2;
+   line-height: 1.5;
    font-weight: 800;
 
    @include media(768) {
       font-size: 28px;
+      line-height: 2;
    }
 
    @include media(1024) {
