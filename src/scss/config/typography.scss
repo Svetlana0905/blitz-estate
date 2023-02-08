@@ -76,6 +76,11 @@ h3 {
 }
 
 .big-price-text {
-   font-size: 33px;
-   line-height: 54px;
+   font-size: 26px;
+   line-height: 33px;
+
+   @include media(1024) {
+      font-size: 33px;
+      line-height: 54px;
+   }
 }

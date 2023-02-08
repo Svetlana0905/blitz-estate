@@ -4,7 +4,11 @@
    max-width: 554px;
    width: 100%;
    margin: 0 auto;
-   margin-bottom: 40px;
+   margin-bottom: 15px;
+
+   @include media(600) {
+      margin-bottom: 40px;
+   }
 
    &:hover {
       box-shadow: $cardBoxShadow;
@@ -17,9 +21,13 @@
 
    &__content {
       width: 100%;
-      padding: 23px 28px 0;
+      padding: 15px 10px 0;
       border: $border1;
       border-top: 0px;
+
+      @include media(600) {
+         padding: 23px 28px 0;
+      }
    }
 
    & h3 {
