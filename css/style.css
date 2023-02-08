@@ -876,9 +876,7 @@ h3 {
 }
 
 .grid-international__item:hover .item-international__content-inner,
-.grid-international__item:focus .item-international__content-inner,
-.grid-international__item:active .item-international__content-inner,
-.grid-international__item:focus-visible .item-international__content-inner {
+.grid-international__item:focus-within .item-international__content-inner {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1072,14 +1070,13 @@ h3 {
 
 .apartment-card img {
   width: 100%;
-  margin-bottom: 23px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .apartment-card__content {
   width: 100%;
-  padding: 0 28px;
+  padding: 23px 28px 0;
   border: 1px solid #f6f6f6;
   border-top: 0px;
 }
