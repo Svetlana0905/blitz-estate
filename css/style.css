@@ -765,6 +765,11 @@ h3 {
   font-weight: 500;
 }
 
+.slider__item:hover,
+.slider__item:focus {
+  cursor: pointer;
+}
+
 .slider__item span {
   font-weight: 600;
   opacity: 0.5;
