@@ -1,0 +1,44 @@
+.about-us {
+   background: $grayColor;
+   padding: 64px 10px 53px;
+
+   &__inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 0 auto;
+      max-width: $maxWidth;
+
+      @include media(1150) {
+         flex-wrap: nowrap;
+      }
+   }
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50%;
+      padding-top: 25px;
+
+      & h2 {
+         margin-bottom: 19px;
+         line-height: 1.4;
+      }
+
+      & p {
+         font-size: 16px;
+         line-height: 26px;
+         margin-bottom: 15px;
+      }
+
+      & p~p {
+         margin-bottom: 27px;
+      }
+   }
+
+   &__slider {
+      flex-basis: 50%;
+   }
+}

@@ -18,6 +18,11 @@
 // AOS анимация 
 @import 'config/aos';
 
+// Слайдеры
+@import 'libs/swiper';
+@import 'libs/swiper2';
+
+
 // Подключение стилей отдельных блоков и секций 
 @import 'layout/popup';
 @import 'layout/links';
@@ -30,13 +35,19 @@
 @import 'layout/international';
 @import 'layout/apartments';
 @import 'layout/apartment-card';
+@import 'layout/about';
+@import 'layout/services';
+@import 'layout/agencyLead';
 @import 'layout/footer';
 
 .main {
-   max-width: $maxWidth;
    width: 100%;
    margin: 0 auto;
-   // padding: 0 5px;
+}
+
+.container {
+   max-width: $maxWidth;
+   margin: 0 auto;
 }
 
 .disable-scroll {

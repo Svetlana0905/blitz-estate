@@ -1,14 +1,129 @@
 .footer {
+  background: rgba(83, 88, 96, 1);
 
-  // padding: rem(20) 0;
-  // background: $blackColor;
-  // .footer__container
   &__container {
     display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 27px 10px;
+
+    @include media(945) {
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    & p {
+      color: $white;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    // @include media(510) {
-    //   flex-direction: column;
-    //   align-items: flex-start;
-    // }
+    gap: 15px;
+    max-width: 100%;
+    width: 100%;
+    padding-top: 3px;
+
+    @include media(945) {
+      align-items: start;
+      max-width: 322px;
+    }
+  }
+
+  &__opening {
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  &__adress {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  &__logo-block {
+    display: flex;
+    padding-left: 10px;
+    text-align: center;
+    border-top: $border1;
+
+    @include media(1098) {
+      border: none;
+      padding-left: 100px;
+      background: url(../images/icon/footer_logo.svg) 11% 53% no-repeat;
+    }
+
+    & img {
+      width: 77px;
+      height: 48px;
+      margin-top: 20px;
+
+      @include media(945) {
+        margin-top: 64px;
+      }
+    }
+
+
+    & span {
+      padding-top: 9px;
+      padding-left: 29px;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: start;
+      color: $white;
+
+      @include media(945) {
+        padding-top: 60px;
+      }
+    }
+  }
+
+  &__ogrn {
+    display: flex;
+    gap: 42px;
+
+    & span {
+      font-size: 13px;
+      line-height: 30px;
+      color: $white;
+    }
+  }
+
+  &__phone-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+
+    @include media(1098) {
+      padding-left: 85px;
+    }
+
+    & .primary-text {
+      font-size: 22px;
+      line-height: 36px;
+      text-decoration-line: underline;
+      color: $white;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__phone-link {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 12px;
+
+    @include media(600) {
+      color: $white;
+      font-size: 30px;
+      line-height: 49px;
+      font-weight: 400;
+    }
   }
 }

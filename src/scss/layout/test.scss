@@ -3,16 +3,14 @@
    flex-direction: column;
    align-items: center;
    margin: 0 auto;
-   padding-top: 60px;
+   padding-top: 40px;
 
    & h2 {
       margin-bottom: 7px;
-      margin-left: 8px;
    }
 
    & .subtitle {
       margin-bottom: 53px;
-      margin-left: 6px;
    }
 
    &__container {
@@ -27,7 +25,7 @@
 
       @include media(1120) {
          flex-wrap: nowrap;
-         margin-left: 15px;
+         margin-left: 8px;
       }
    }
 

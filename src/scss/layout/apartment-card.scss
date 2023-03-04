@@ -4,11 +4,6 @@
    max-width: 554px;
    width: 100%;
    margin: 0 auto;
-   margin-bottom: 15px;
-
-   @include media(600) {
-      margin-bottom: 40px;
-   }
 
    &:hover {
       box-shadow: $cardBoxShadow;

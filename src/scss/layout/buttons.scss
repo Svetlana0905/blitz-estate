@@ -39,8 +39,59 @@
    }
 }
 
+.order-call-button-footer {
+   position: relative;
+   width: 272px;
+   padding: 15px 0 18px;
+   font-family: 'Geometria';
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 500;
+   background: $white;
+   color: $black;
+   border-radius: 5px;
+   transition: $standartTrans;
+
+   &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: $mainRadius;
+      border: 1px solid transparent;
+      z-index: 0;
+      transition: $standartTrans;
+   }
+
+   &::after {
+      opacity: 0;
+      border: 1px solid $black;
+      transform: translateY(-15px) translateX(15px);
+   }
+
+   &:hover::after {
+      opacity: 1;
+      transform: translateY(0px) translateX(0px);
+   }
+
+   &:hover {
+      color: $blue;
+      font-weight: 500;
+      box-shadow: 0px 5px 12px 2px rgb(0 0 0 / 41%);
+   }
+
+   &:focus,
+   &:active {
+      color: $blue;
+      border-color: $blue;
+      box-shadow: 0px 5px 9px 0px rgb(0 0 0 / 43%) inset;
+   }
+}
+
 .primary-button {
-   height: 68px;
+   height: 70px;
    max-width: 360px;
    font-size: 20px;
    color: $white;
@@ -53,6 +104,20 @@
       color: $black;
       box-shadow: $btnBoxShadow;
       border-radius: $secondaryRadius;
+   }
+
+   &.small {
+      width: 270px;
+      height: 60px;
+      padding: 11px 0 13px;
+      line-height: 30px;
+   }
+
+   &:focus,
+   &:active {
+      color: $white;
+      border-color: $blue;
+      box-shadow: 0px 5px 9px 0px rgb(0 0 0 / 43%) inset;
    }
 }
 
@@ -123,6 +188,7 @@
 }
 
 .appartment-button {
+   max-width: $maxWidth;
    width: 100%;
    height: 60px;
    font-size: 18px;
